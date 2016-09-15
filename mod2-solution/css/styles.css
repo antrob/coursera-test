@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Base Styles */
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+h1 { font-size: 175%; text-align: center;}
+h2 { font-size: 125%; }
+
+section { 
+		background-color: #f8d9a2;
+		border: 1px solid black;
+		padding:50px 15px 10px 15px;
+		margin-bottom: 20px;
+		position:relative;
+ }
+
+section h2 { 
+			border: 1px solid black;
+			padding:5px 40px;
+			margin: 0;
+			position:absolute;
+			top:2px;
+			right: 2px;
+		   }
+
+section p { margin: 0; }		   
+
+section:nth-child(1) h2 { 
+						background-color: darkgreen;
+						color:white;
+					   }
+
+section:nth-child(2) h2 { 
+						background-color: darkred;
+						color:white;
+					   }
+
+section:nth-child(3) h2 { 
+						background-color: darkgoldenrod;
+						color:white;
+					   }					   
+
+.container {  margin:25px; }
+
+.row { width: 100%; }
+
+/********** Desktop version **********/
+@media (min-width: 992px) {
+
+	section { 	
+				box-sizing: border-box;
+				float: left; 
+				margin-right: 2%;
+				width: 32%;
+			}
+
+	section:nth-child(3) { margin-right: 0; }		
+
+
+}
+
+/********** Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	section { 	
+				box-sizing: border-box;
+				float: left; 
+				width: 49%;
+			}
+
+	section:nth-child(1) { margin-right: 2%; }		
+
+	section:nth-child(3) { display: block; width: 100%; }
+
+
+}
+
+/********** Mobile view **********/
+@media (max-width: 767px) {
+
+	/* Apply the Base Styles only */
+}
